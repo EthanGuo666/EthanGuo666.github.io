@@ -1,6 +1,6 @@
 import React from "react";
 import Github from "../assets/Github.svg";
-import Instagram from "../assets/Instagram.svg";
+import Instagram from "../assets/Instagram.png";
 import LinkedIn from "../assets/LinkedIn.svg";
 import Profile from "../assets/ProfilePhoto.jpg";
 
@@ -24,7 +24,7 @@ function HeaderBar() {
           <a href='https://github.com/EasonGuo666' className=''>
             <img
               src={Github}
-              className='w-7 h-7 mx-4 my=2 hover:bg-gray-300 hover:rounded-full'
+              className='w-7 h-7 mx-4 my=2 rounded-full bg-gray-600 hover:bg-gray-300'
               alt=''
             />
           </a>
@@ -32,7 +32,7 @@ function HeaderBar() {
           <a href='https://www.instagram.com/guo_yixuan666/'>
             <img
               src={Instagram}
-              className='w-7 h-7 mx-4 my=2 hover:bg-gray-300 hover:rounded-full'
+              className='w-8 h-8 mx-4 my=2 rounded-full bg-gray-200 hover:bg-white '
               alt=''
             />
           </a>
@@ -40,7 +40,7 @@ function HeaderBar() {
           <a href='https://www.linkedin.com/in/yixuan-guo-35372b1a9/'>
             <img
               src={LinkedIn}
-              className='w-7 h-7 mx-4 my=2 hover:fill-slate-700'
+              className='w-7 h-7 mx-4 my=2 rounded-full bg-gray-600 hover:bg-gray-300'
               alt=''
             />
           </a>

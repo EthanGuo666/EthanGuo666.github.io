@@ -1,4 +1,3 @@
-import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 
 import HeaderBar from "../src/components/HeaderBar";
