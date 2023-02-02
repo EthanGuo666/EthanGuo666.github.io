@@ -6,17 +6,10 @@ import Profile from "../assets/ProfilePhoto.jpg";
 
 function HeaderBar() {
   return (
-    <header className='flex justify-between items-center h-20'>
+    <header className='flex justify-between items-center h-20 w-full'>
       <img src={Profile} alt='' className='w-12 h-12 rounded-full' href='' />
 
       <div className='container'>
-        {/* <button className='ml-6 text-white font-bold hover:text-gray-400 '>
-          {"Education"}
-        </button>
-
-        <button className='ml-6 text-white font-bold hover:text-gray-400 '>
-          {"Projects"}
-        </button> */}
         <label className='ml-6 text-white font-bold hover:text-gray-400'>Ethan Guo</label>
       </div>
 
