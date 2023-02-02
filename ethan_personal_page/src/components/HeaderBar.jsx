@@ -9,7 +9,7 @@ function HeaderBar() {
     <header className='flex justify-between items-center h-20 w-full'>
       <img src={Profile} alt='' className='w-12 h-12 rounded-full' href='' />
 
-      <div className='container'>
+      <div className='w-full'>
         <label className='ml-6 text-gray-300 font-bold hover:text-white'>Ethan Guo</label>
       </div>
 
