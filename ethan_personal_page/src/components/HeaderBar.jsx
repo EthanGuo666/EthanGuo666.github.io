@@ -10,13 +10,14 @@ function HeaderBar() {
       <img src={Profile} alt='' className='w-12 h-12 rounded-full' href='' />
 
       <div className='container'>
-        <button className='ml-6 text-white font-bold hover:text-gray-400 '>
+        {/* <button className='ml-6 text-white font-bold hover:text-gray-400 '>
           {"Education"}
         </button>
 
         <button className='ml-6 text-white font-bold hover:text-gray-400 '>
           {"Projects"}
-        </button>
+        </button> */}
+        <label className='ml-6 text-white font-bold hover:text-gray-400'>Ethan Guo</label>
       </div>
 
       <nav className='flex'>
@@ -32,7 +33,7 @@ function HeaderBar() {
           <a href='https://www.instagram.com/guo_yixuan666/'>
             <img
               src={Instagram}
-              className='w-8 h-8 mx-4 my=2 rounded-full bg-gray-200 hover:bg-white '
+              className='w-7 h-7 mx-4 my=2 rounded-full bg-gray-200 hover:bg-white '
               alt=''
             />
           </a>
