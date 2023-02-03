@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import HeaderBar from "./components/HeaderBar";
 import SummaryBox from "./components/SummaryBox";
 import EducationPage from "./components/EducationPage";
+import ProjectPage from "./components/ProjectPage";
 
 function App() {
   return (
@@ -13,8 +14,11 @@ function App() {
       <div className="w-full h-screen">
         <SummaryBox />
       </div>
-      <div className="w-full h-max">
+      <div className="w-full h-auto">
         <EducationPage />
+      </div>
+      <div className="w-full h-auto">
+        <ProjectPage />
       </div>
     </div>
   );
