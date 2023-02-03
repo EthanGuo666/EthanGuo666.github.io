@@ -77,7 +77,7 @@ function EducationPage() {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "23px", px: 2 }}>
-              <Typography>2nd class schoolarship</Typography>
+              <Typography>2nd-class schoolarship</Typography>
               <Typography variant='body2' color='text.secondary'>
                 school of computer science
               </Typography>
@@ -98,7 +98,29 @@ function EducationPage() {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography>3rd class schoolarship</Typography>
+              <Typography>3rd-class schoolarship</Typography>
+              <Typography variant='body2' color='text.secondary'>
+                school of computer science
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              variant='body2'
+              color='text.secondary'
+            >
+              2018 Jun
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color='success'>{/* <RepeatIcon /> */}</TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              {/* <Typography variant='h6'>Title 4</Typography> */}
+              <Typography>3rd-class schoolarship</Typography>
               <Typography variant='body2' color='text.secondary'>
                 school of computer science
               </Typography>
@@ -157,7 +179,7 @@ function EducationPage() {
               variant='body2'
               color='text.secondary'
             >
-              time4
+              2020 Feb
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
@@ -165,10 +187,10 @@ function EducationPage() {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant='h6'>Title 4</Typography>
-              <Typography>Description4</Typography>
+              {/* <Typography variant='h6'>Title 4</Typography> */}
+              <Typography>3rd-class schoolarship</Typography>
               <Typography variant='body2' color='text.secondary'>
-                note4
+                school of computer science
               </Typography>
             </TimelineContent>
           </TimelineItem>
@@ -176,10 +198,10 @@ function EducationPage() {
           <TimelineItem>
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
-              variant='body2'
+              variant='h5'
               color='text.secondary'
             >
-              time4
+              2020 Jun
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
@@ -187,10 +209,9 @@ function EducationPage() {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant='h6'>Title 4</Typography>
-              <Typography>Description4</Typography>
+              <Typography>Graduated from BIT</Typography>
               <Typography variant='body2' color='text.secondary'>
-                note4
+                Bachelor of Science in Computer Science
               </Typography>
             </TimelineContent>
           </TimelineItem>
@@ -238,7 +259,7 @@ function EducationPage() {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant='h6'>Runner-up for GovHack in South Australia region</Typography>
+              <Typography variant='h6'>Runner-up for GovHack in South Australia</Typography>
               <Typography>Data hackthon supported by SA government</Typography>
               <Typography variant='body2' color='text.secondary'>
                 The winning news was reported on CMU news website
