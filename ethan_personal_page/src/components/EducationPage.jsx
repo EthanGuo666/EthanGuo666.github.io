@@ -20,10 +20,11 @@ import RepeatIcon from "@mui/icons-material/Repeat";
 
 import Typography from "@mui/material/Typography";
 import { Image } from "@mui/icons-material";
+import '../styles/Canvas.css';
 
 function EducationPage() {
   return (
-    <div className='flex w-full h-full bg-zinc-300'>
+    <div className='Canvas flex'>
       <div className='w-full m-auto my-16 text-center'>
         <span className='font-sans text-3xl font-bold text-stone-500'>
           Education
@@ -115,11 +116,10 @@ function EducationPage() {
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color='success'>{/* <RepeatIcon /> */}</TimelineDot>
+              <TimelineDot color='success'></TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              {/* <Typography variant='h6'>Title 4</Typography> */}
               <Typography>3rd-class schoolarship</Typography>
               <Typography variant='body2' color='text.secondary'>
                 school of computer science
@@ -137,7 +137,7 @@ function EducationPage() {
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color='success'>{/* <RepeatIcon /> */}</TimelineDot>
+              <TimelineDot color='success'></TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
@@ -255,7 +255,7 @@ function EducationPage() {
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color='primary'><EmojiEventsIcon /></TimelineDot>
+              <TimelineDot color='success'><EmojiEventsIcon /></TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
@@ -277,7 +277,7 @@ function EducationPage() {
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color='primary'><CastIcon /></TimelineDot>
+              <TimelineDot color='success'><CastIcon /></TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
