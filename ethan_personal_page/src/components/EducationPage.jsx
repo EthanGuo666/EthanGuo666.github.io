@@ -42,22 +42,22 @@ function EducationPage() {
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color='success'>
+              <TimelineDot color='warning'>
                 <SchoolIcon />
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant='h5' component='span' className='flex '>
-                <div className='align-text-bottom'>
+              <Typography variant='h5' component='span'>
+                <a
+                  className='align-text-bottom hover:text-white'
+                  href='https://bit.edu.cn/'
+                >
                   Beijing Institute of Technology
-                </div>
+                </a>
               </Typography>
-              <span>
-                <Typography color='text.secondary'>
-                  School of Computer Science and Technology
-                </Typography>
-              </span>
+              <Typography>School of Computer Science and Technology</Typography>
+              <Typography color='text.secondary'>Undergraduate</Typography>
             </TimelineContent>
           </TimelineItem>
 
@@ -67,54 +67,204 @@ function EducationPage() {
               variant='body2'
               color='text.secondary'
             >
-              10:00 am
+              2017 Feb
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color='primary'>
+              <TimelineDot color='success'>
                 {/* <LaptopMacIcon /> */}
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant='h5' component='span'>
-                2
+            <TimelineContent sx={{ py: "23px", px: 2 }}>
+              <Typography>
+                {/* 2nd class schoolarship */}
+                Title2
               </Typography>
-              <Typography>description</Typography>
+              <Typography variant='body2' color='text.secondary'>
+                school of computer science
+                {/* description2 */}
+              </Typography>
             </TimelineContent>
           </TimelineItem>
 
           <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              variant='body2'
+              color='text.secondary'
+            >
+              2017 Jun
+            </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color='primary' variant='outlined'>
-                <HotelIcon />
-              </TimelineDot>
+              <TimelineDot color='success'>{/* <HotelIcon /> */}</TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant='h5' component='span'>
-                3
+              <Typography>Title3</Typography>
+              <Typography variant='body2' color='text.secondary'>
+                description
               </Typography>
-              <Typography>description</Typography>
             </TimelineContent>
           </TimelineItem>
 
           <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              variant='body2'
+              color='text.secondary'
+            >
+              2018 Jul - Aug
+            </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color='secondary'>
-                <RepeatIcon />
+              <TimelineDot color='success'>
+                {/* <RepeatIcon /> */}
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant='h5' component='span'>
-                Repeat
+              <Typography variant='h6'>
+                Cardiff University, Wales, UK
               </Typography>
-              <Typography>Because this is the life you love!</Typography>
+              <Typography>Big Data and High Performance Computing</Typography>
+              <Typography variant='body2' color='text.secondary'>
+                summer school project
+              </Typography>
             </TimelineContent>
           </TimelineItem>
+
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              variant='body2'
+              color='text.secondary'
+            >
+              time4
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color='success'>
+                {/* <RepeatIcon /> */}
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography variant='h6'>
+                Title 4
+              </Typography>
+              <Typography>Description4</Typography>
+              <Typography variant='body2' color='text.secondary'>
+                note4
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              variant='body2'
+              color='text.secondary'
+            >
+              time4
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color='success'>
+                {/* <RepeatIcon /> */}
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography variant='h6'>
+                Title 4
+              </Typography>
+              <Typography>Description4</Typography>
+              <Typography variant='body2' color='text.secondary'>
+                note4
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              variant='body2'
+              color='text.secondary'
+            >
+              time4
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color='success'>
+                {/* <RepeatIcon /> */}
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography variant='h6'>
+                Title 4
+              </Typography>
+              <Typography>Description4</Typography>
+              <Typography variant='body2' color='text.secondary'>
+                note4
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              variant='body2'
+              color='text.secondary'
+            >
+              time4
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color='success'>
+                {/* <RepeatIcon /> */}
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography variant='h6'>
+                Title 4
+              </Typography>
+              <Typography>Description4</Typography>
+              <Typography variant='body2' color='text.secondary'>
+                note4
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              variant='body2'
+              color='text.secondary'
+            >
+              time4
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color='success'>
+                {/* <RepeatIcon /> */}
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography variant='h6'>
+                Title 4
+              </Typography>
+              <Typography>Description4</Typography>
+              <Typography variant='body2' color='text.secondary'>
+                note4
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+
         </Timeline>
       </div>
     </div>
