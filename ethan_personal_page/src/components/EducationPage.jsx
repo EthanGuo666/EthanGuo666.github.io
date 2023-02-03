@@ -13,6 +13,8 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import FastfoodIcon from "@mui/icons-material/Fastfood";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import SchoolIcon from "@mui/icons-material/School";
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import CastIcon from '@mui/icons-material/Cast';
 import HotelIcon from "@mui/icons-material/Hotel";
 import RepeatIcon from "@mui/icons-material/Repeat";
 
@@ -67,23 +69,17 @@ function EducationPage() {
               variant='body2'
               color='text.secondary'
             >
-              2017 Feb
+              2017 Jun
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color='success'>
-                {/* <LaptopMacIcon /> */}
-              </TimelineDot>
+              <TimelineDot color='success'></TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "23px", px: 2 }}>
-              <Typography>
-                {/* 2nd class schoolarship */}
-                Title2
-              </Typography>
+              <Typography>2nd class schoolarship</Typography>
               <Typography variant='body2' color='text.secondary'>
                 school of computer science
-                {/* description2 */}
               </Typography>
             </TimelineContent>
           </TimelineItem>
@@ -94,17 +90,17 @@ function EducationPage() {
               variant='body2'
               color='text.secondary'
             >
-              2017 Jun
+              2018 Feb
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color='success'>{/* <HotelIcon /> */}</TimelineDot>
+              <TimelineDot color='success'></TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography>Title3</Typography>
+              <Typography>3rd class schoolarship</Typography>
               <Typography variant='body2' color='text.secondary'>
-                description
+                school of computer science
               </Typography>
             </TimelineContent>
           </TimelineItem>
@@ -119,9 +115,7 @@ function EducationPage() {
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color='success'>
-                {/* <RepeatIcon /> */}
-              </TimelineDot>
+              <TimelineDot color='success'>{/* <RepeatIcon /> */}</TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
@@ -141,19 +135,37 @@ function EducationPage() {
               variant='body2'
               color='text.secondary'
             >
+              2018 Sep - Dec
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color='success'>{/* <RepeatIcon /> */}</TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography variant='h6'>Peking University</Typography>
+              <Typography>Software Engineering Institute</Typography>
+              <Typography variant='body2' color='text.secondary'>
+                research assistant of Open-source Development Research Team
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              variant='body2'
+              color='text.secondary'
+            >
               time4
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color='success'>
-                {/* <RepeatIcon /> */}
-              </TimelineDot>
+              <TimelineDot color='success'>{/* <RepeatIcon /> */}</TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant='h6'>
-                Title 4
-              </Typography>
+              <Typography variant='h6'>Title 4</Typography>
               <Typography>Description4</Typography>
               <Typography variant='body2' color='text.secondary'>
                 note4
@@ -171,15 +183,11 @@ function EducationPage() {
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color='success'>
-                {/* <RepeatIcon /> */}
-              </TimelineDot>
+              <TimelineDot color='success'>{/* <RepeatIcon /> */}</TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant='h6'>
-                Title 4
-              </Typography>
+              <Typography variant='h6'>Title 4</Typography>
               <Typography>Description4</Typography>
               <Typography variant='body2' color='text.secondary'>
                 note4
@@ -190,25 +198,28 @@ function EducationPage() {
           <TimelineItem>
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
-              variant='body2'
+              variant='h5'
               color='text.secondary'
             >
-              time4
+              2020 Aug
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color='success'>
-                {/* <RepeatIcon /> */}
-              </TimelineDot>
+              <TimelineDot color='warning'><SchoolIcon /></TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant='h6'>
-                Title 4
+              <Typography variant='h5'>
+                <a
+                  className='align-text-bottom hover:text-white'
+                  href='https://www.cmu.edu/'
+                >
+                  Carnegie Mellon University
+                </a>
               </Typography>
-              <Typography>Description4</Typography>
-              <Typography variant='body2' color='text.secondary'>
-                note4
+              <Typography>Heinz School of Information Systems</Typography>
+              <Typography color='text.secondary'>
+                Master of Science in Information Technology
               </Typography>
             </TimelineContent>
           </TimelineItem>
@@ -219,22 +230,18 @@ function EducationPage() {
               variant='body2'
               color='text.secondary'
             >
-              time4
+              2020 Aug
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color='success'>
-                {/* <RepeatIcon /> */}
-              </TimelineDot>
+              <TimelineDot color='primary'><EmojiEventsIcon /></TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant='h6'>
-                Title 4
-              </Typography>
-              <Typography>Description4</Typography>
+              <Typography variant='h6'>Runner-up for GovHack in South Australia region</Typography>
+              <Typography>Data hackthon supported by SA government</Typography>
               <Typography variant='body2' color='text.secondary'>
-                note4
+                The winning news was reported on CMU news website
               </Typography>
             </TimelineContent>
           </TimelineItem>
@@ -245,25 +252,44 @@ function EducationPage() {
               variant='body2'
               color='text.secondary'
             >
-              time4
+              2021 May - Jul
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color='success'>
-                {/* <RepeatIcon /> */}
-              </TimelineDot>
+              <TimelineDot color='primary'><CastIcon /></TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant='h6'>
-                Title 4
-              </Typography>
-              <Typography>Description4</Typography>
+              <Typography variant='h6'>Main contributor of Avartus project</Typography>
+              <Typography>A teaching facility remote control project of CMU</Typography>
               <Typography variant='body2' color='text.secondary'>
-                note4
+                Team Lead
               </Typography>
             </TimelineContent>
           </TimelineItem>
+
+
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              variant='h5'
+              color='text.secondary'
+            >
+              2022 Aug
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color='success'></TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography>Graduated from CMU</Typography>
+              <Typography variant='body2' color='text.secondary'>
+                legend continues...
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+
 
         </Timeline>
       </div>
