@@ -38,7 +38,7 @@ function EducationPage() {
               variant='h5'
               color='text.secondary'
             >
-              2016 - Sep
+              2016 Sep
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
@@ -55,7 +55,7 @@ function EducationPage() {
               </Typography>
               <span>
                 <Typography color='text.secondary'>
-                  Happy freshman year started, Beijing is sooo large...
+                  School of Computer Science and Technology
                 </Typography>
               </span>
             </TimelineContent>
