@@ -10,7 +10,7 @@ function HeaderBar() {
       <img src={Profile} alt='' className='w-12 h-12 rounded-full' />
 
       <div className='w-full'>
-        <label className='ml-6 text-gray-300 font-bold hover:text-white'>Ethan Guo</label>
+        <a className='ml-6 text-gray-300 font-bold hover:text-white' href='#page-top' >Ethan Guo</a>
       </div>
 
       <nav className='flex'>
