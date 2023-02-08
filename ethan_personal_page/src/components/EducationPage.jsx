@@ -282,7 +282,7 @@ function EducationPage() {
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
               <Typography variant='h6'>Main contributor of Avartus project</Typography>
-              <Typography>A teaching facility remote control project of CMU</Typography>
+              <Typography>A teaching facility remote control project by CMU IT Department</Typography>
               <Typography variant='body2' color='text.secondary'>
                 Team Lead
               </Typography>
