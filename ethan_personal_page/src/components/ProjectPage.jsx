@@ -1,14 +1,13 @@
 import React from "react";
-import { useState } from "react";
 
+import { CardActionArea } from "@mui/material";
 import Box from "@mui/material/Box";
-import Tab from "@mui/material/Tab";
-import Tabs from "@mui/material/Tabs";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+import Tab from "@mui/material/Tab";
+import Tabs from "@mui/material/Tabs";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
 import "../styles/Canvas.css";
 
 function TabPanel(props) {
@@ -85,7 +84,7 @@ function ProjectPage() {
                 <CardMedia
                   component='img'
                   height='140'
-                  image='/src/assets/BIT.png'
+                  image='/src/assets/picturePlaceHolder.png'
                   //alt='green iguana'
                 />
                 <CardContent>
@@ -106,7 +105,7 @@ function ProjectPage() {
                 <CardMedia
                   component='img'
                   height='140'
-                  image='/src/assets/BIT.png'
+                  image='/src/assets/picturePlaceHolder.png'
                   //alt='green iguana'
                 />
                 <CardContent>
@@ -127,7 +126,7 @@ function ProjectPage() {
                 <CardMedia
                   component='img'
                   height='140'
-                  image='/src/assets/BIT.png'
+                  image='/src/assets/picturePlaceHolder.png'
                   //alt='green iguana'
                 />
                 <CardContent>
@@ -148,7 +147,7 @@ function ProjectPage() {
                 <CardMedia
                   component='img'
                   height='140'
-                  image='/src/assets/BIT.png'
+                  image='/src/assets/picturePlaceHolder.png'
                   //alt='green iguana'
                 />
                 <CardContent>
