@@ -55,26 +55,20 @@ function ProjectPage() {
       <br />
       <br />
 
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label='basic tabs example'
-        >
-          <Tab label='Item One' {...a11yProps(0)} />
-          <Tab label='Item Two' {...a11yProps(1)} />
-          <Tab label='Item Three' {...a11yProps(2)} />
-        </Tabs>
-      </Box>
-      <TabPanel value={value} index={0}>
-        Item One
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
-      </TabPanel>
+      <div className='flex flex-wrap justify-center'>
+        <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-10'>
+          <div className='bg-gray-200 h-80'>Object 1</div>
+        </div>
+        <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-10'>
+          <div className='bg-gray-200 h-80'>Object 2</div>
+        </div>
+        <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-10'>
+          <div className='bg-gray-200 h-80'>Object 3</div>
+        </div>
+        <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-10'>
+          <div className='bg-gray-200 h-80'>Object 4</div>
+        </div>
+      </div>
 
       <div className='m-5'>
         <div className='grid gap-4 grid-cols-2 grid-rows-2'>
