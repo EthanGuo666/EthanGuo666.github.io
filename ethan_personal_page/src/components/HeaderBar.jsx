@@ -4,13 +4,16 @@ import Instagram from "../assets/Instagram.png";
 import LinkedIn from "../assets/LinkedIn.svg";
 import Profile from "../assets/ProfilePhoto.jpg";
 
+import { Link } from "react-scroll";
+
 function HeaderBar() {
   return (
     <header className='flex justify-between items-center h-20 w-full'>
       <img src={Profile} alt='' className='w-12 h-12 rounded-full' />
 
       <div className='w-full'>
-        <a className='ml-6 text-gray-300 font-bold hover:text-white' href='#page-top' >Ethan Guo</a>
+        {/* <a className='ml-6 text-gray-300 font-bold hover:text-white' href='#page-top' >Ethan Guo</a> */}
+        <Link to="page-top" smooth duration={500} className='ml-6 text-gray-300 font-bold hover:text-white hover:cursor-pointer'>Ethan Guo</Link>
       </div>
 
       <nav className='flex'>
