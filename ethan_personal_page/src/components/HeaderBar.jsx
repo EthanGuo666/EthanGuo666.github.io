@@ -12,7 +12,6 @@ function HeaderBar() {
       <img src={Profile} alt='' className='w-12 h-12 rounded-full' />
 
       <div className='w-full'>
-        {/* <a className='ml-6 text-gray-300 font-bold hover:text-white' href='#page-top' >Ethan Guo</a> */}
         <Link to="page-top" smooth duration={500} className='ml-6 text-gray-300 font-bold hover:text-white hover:cursor-pointer'>Ethan Guo</Link>
       </div>
 
