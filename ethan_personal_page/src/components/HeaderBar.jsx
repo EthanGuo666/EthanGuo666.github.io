@@ -42,7 +42,7 @@ function HeaderBar() {
 
         <nav className='flex'>
           <div className='flex flex-row items-center'>
-            <a href='https://github.com/EasonGuo666' className=''>
+            <a href='https://github.com/EthanGuo666' className=''>
               <img
                 src={Github}
                 className='w-7 h-7 mx-4 my=2 rounded-full bg-gray-600 hover:bg-gray-300 transition duration-300'
