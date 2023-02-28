@@ -36,13 +36,13 @@ function HeaderBar() {
             to='page-top'
             smooth
             duration={500}
-            className='ml-6 text-gray-300 font-bold text-center hover:text-white hover:cursor-pointer transition duration-300'
+            className='ml-4 text-gray-300 font-bold text-center hover:text-white hover:cursor-pointer transition duration-300'
           >
             Ethan Guo
           </Link>
           <button
             onClick={() => setMenuVisible(!menuVisible)}
-            className='ml-4 text-gray-300 hover:text-white'
+            className='ml-6 text-gray-300 hover:text-white'
           >
             {!menuVisible && <ExpandCircleDownOutlinedIcon />}
             {menuVisible && <KeyboardArrowUpOutlinedIcon />}
