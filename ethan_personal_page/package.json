@@ -2,11 +2,14 @@
   "name": "ethan_personal_page",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://EthanGuo666.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -14,6 +17,7 @@
     "@mui/icons-material": "^5.11.0",
     "@mui/lab": "^5.0.0-alpha.118",
     "@mui/material": "^5.11.7",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scroll": "^1.8.9"
