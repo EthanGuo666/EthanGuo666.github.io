@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Github from "../assets/Github.svg";
 import Instagram from "../assets/Instagram.png";
 import LinkedIn from "../assets/LinkedIn.svg";
@@ -11,11 +10,21 @@ import { Link } from "react-scroll";
 
 function HeaderBar() {
   const [menuVisible, setMenuVisible] = useState(false);
+  const menuRef = useRef(null);
 
-  const handleClickMenu = () => {
-    console.log("click on menu button");
-    setMenuVisible(!menuVisible);
-  };
+  useEffect(() => {
+    const handleClickOutsideOfMenu = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuVisible(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutsideOfMenu);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutsideOfMenu);
+    };
+  }, [menuRef])
 
   return (
     <div>
@@ -32,7 +41,7 @@ function HeaderBar() {
             Ethan Guo
           </Link>
           <button
-            onClick={handleClickMenu}
+            onClick={() => setMenuVisible(!menuVisible)}
             className='ml-4 text-gray-300 hover:text-white'
           >
             {!menuVisible && <ExpandCircleDownOutlinedIcon />}
@@ -68,7 +77,7 @@ function HeaderBar() {
           </div>
         </nav>
       </header>
-      {menuVisible && <div>hello</div>}
+      {menuVisible && <div ref={menuRef}>hello</div>}
     </div>
   );
 }
