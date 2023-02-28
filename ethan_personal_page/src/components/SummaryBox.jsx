@@ -15,7 +15,7 @@ function SummaryBox() {
     }
   });
 
-  const message = "Hi, I'm Ethan! \n\nWelcome to my space...";
+  const message = "Hi, I'm Ethan! Welcome to my space...";
 
   return (
     //
@@ -23,7 +23,7 @@ function SummaryBox() {
       <div className='w-full m-auto text-center font-sans text-5xl font-bold text-white'>
         {/* <span>Hi, I'm Ethan!<br/></span> */}
         {text}
-        <span className="text-yellow-300 animate-spin">|</span>
+        <span className="text-yellow-300">|</span>
       </div>
     </div>
   )
