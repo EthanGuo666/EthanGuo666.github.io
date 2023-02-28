@@ -2,7 +2,7 @@
   "name": "ethan_personal_page",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://ethanguo666.github.io",
+  "homepage": "https://ethanguo666.github.io/ethan_personal_page",
   "type": "module",
   "scripts": {
     "dev": "vite",
