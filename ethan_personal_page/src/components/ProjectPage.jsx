@@ -63,7 +63,7 @@ function ProjectPage() {
           {/* <div className='bg-gray-200 h-80 rounded-3xl hover:shadow-2xl'>
             Object 1
           </div> */}
-          <Card className='hover:shadow-2xl rounded-2xl'>
+          <Card className='hover:shadow-2xl' style={{borderRadius: '30px'}}>
             <CardActionArea>
               <CardMedia
                 component='img'
@@ -85,7 +85,7 @@ function ProjectPage() {
           {/* <div className='bg-gray-200 h-80 rounded-3xl hover:shadow-2xl'>
             Object 2
           </div> */}
-          <Card className='hover:shadow-2xl'>
+          <Card className='hover:shadow-2xl' style={{borderRadius: '30px'}}>
             <CardActionArea>
               <CardMedia
                 component='img'
@@ -107,7 +107,7 @@ function ProjectPage() {
           {/* <div className='bg-gray-200 h-80 rounded-3xl hover:shadow-2xl'>
             Object 3
           </div> */}
-          <Card className='hover:shadow-2xl'>
+          <Card className='hover:shadow-2xl' style={{borderRadius: '30px'}}>
             <CardActionArea>
               <CardMedia
                 component='img'
@@ -129,7 +129,7 @@ function ProjectPage() {
           {/* <div className='bg-gray-200 h-80 rounded-3xl hover:shadow-2xl'>
             Object 4
           </div> */}
-          <Card className='hover:shadow-2xl'>
+          <Card className='hover:shadow-2xl' style={{borderRadius: '30px'}}>
             <CardActionArea>
               <CardMedia
                 component='img'
