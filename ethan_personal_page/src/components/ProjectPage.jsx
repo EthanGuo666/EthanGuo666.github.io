@@ -10,6 +10,10 @@ import Tabs from "@mui/material/Tabs";
 import Typography from "@mui/material/Typography";
 import "../styles/Canvas.css";
 import PicturePlaceholder from '../assets/picturePlaceHolder.png';
+import Avartus from '../assets/Avartus.jpg';
+import Section28Cheese from '../assets/Section28Cheese.jpeg';
+import QRcode from '../assets/QRcode.jpeg';
+import SparkNewsAnalysis from '../assets/SparkNewsAnalysis.jpg';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -59,22 +63,22 @@ function ProjectPage() {
       <br />
 
       <div className='flex flex-wrap justify-center'>
+
         <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-14'>
-          {/* <div className='bg-gray-200 h-80 rounded-3xl hover:shadow-2xl'>
-            Object 1
-          </div> */}
           <Card className='hover:shadow-2xl' style={{borderRadius: '30px'}}>
-            <CardActionArea>
+            <CardActionArea onClick={() => console.log("first")}>
               <CardMedia
+                style={{ height: 350}}
                 component='img'
-                image={PicturePlaceholder}
+                image={Avartus}
               />
               <CardContent>
                 <Typography gutterBottom variant='h5' component='div'>
                   Avartus
                 </Typography>
                 <Typography variant='body2' color='text.secondary'>
-                  Description project 1
+                  A teaching facility remote control<br/>
+                  system of CMU IT Dept.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -82,21 +86,20 @@ function ProjectPage() {
         </div>
 
         <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-14'>
-          {/* <div className='bg-gray-200 h-80 rounded-3xl hover:shadow-2xl'>
-            Object 2
-          </div> */}
           <Card className='hover:shadow-2xl' style={{borderRadius: '30px'}}>
             <CardActionArea>
               <CardMedia
+                style={{ height: 350}}
                 component='img'
-                image={PicturePlaceholder}
+                image={Section28Cheese}
               />
               <CardContent>
                 <Typography gutterBottom variant='h5' component='div'>
-                  Project 2
+                  Section 28 Cheese
                 </Typography>
                 <Typography variant='body2' color='text.secondary'>
-                  Description project 2
+                  The digitalization solution for<br/>
+                  a prize-winning cheese manufacturer.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -104,21 +107,19 @@ function ProjectPage() {
         </div>
 
         <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-14'>
-          {/* <div className='bg-gray-200 h-80 rounded-3xl hover:shadow-2xl'>
-            Object 3
-          </div> */}
           <Card className='hover:shadow-2xl' style={{borderRadius: '30px'}}>
             <CardActionArea>
               <CardMedia
+                style={{ height: 350}}
                 component='img'
-                image={PicturePlaceholder}
+                image={QRcode}
               />
               <CardContent>
                 <Typography gutterBottom variant='h5' component='div'>
-                  Project 3
+                  Zigzag QR filler
                 </Typography>
                 <Typography variant='body2' color='text.secondary'>
-                  Description project 3
+                  A high-performance QR code generator <br/>backend running on AWS
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -126,21 +127,20 @@ function ProjectPage() {
         </div>
 
         <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-14'>
-          {/* <div className='bg-gray-200 h-80 rounded-3xl hover:shadow-2xl'>
-            Object 4
-          </div> */}
           <Card className='hover:shadow-2xl' style={{borderRadius: '30px'}}>
             <CardActionArea>
               <CardMedia
+                style={{ height: 350}}
                 component='img'
-                image={PicturePlaceholder}
+                image={SparkNewsAnalysis}
               />
               <CardContent>
                 <Typography gutterBottom variant='h5' component='div'>
-                  Project 4
+                  Spark News Analysis
                 </Typography>
                 <Typography variant='body2' color='text.secondary'>
-                  Description project 4
+                  Undergraduate thesis project:<br/>
+                  a data analysis pipeline with Apache Spark
                 </Typography>
               </CardContent>
             </CardActionArea>
