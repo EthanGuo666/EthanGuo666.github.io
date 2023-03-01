@@ -15,39 +15,7 @@ import Section28Cheese from '../assets/Section28Cheese.jpeg';
 import QRcode from '../assets/QRcode.jpeg';
 import SparkNewsAnalysis from '../assets/SparkNewsAnalysis.jpg';
 
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role='tabpanel'
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
-  );
-}
-
-function a11yProps(index) {
-  return {
-    id: `simple-tab-${index}`,
-    "aria-controls": `simple-tabpanel-${index}`,
-  };
-}
-
 function ProjectPage() {
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
 
   return (
     <div className='Canvas text-center'>
@@ -68,6 +36,7 @@ function ProjectPage() {
           <Card className='hover:shadow-2xl' style={{borderRadius: '30px'}}>
             <CardActionArea onClick={() => console.log("first")}>
               <CardMedia
+                className='opacity-60 hover:opacity-100 transition duration-400'
                 style={{ height: 350}}
                 component='img'
                 image={Avartus}
@@ -89,6 +58,7 @@ function ProjectPage() {
           <Card className='hover:shadow-2xl' style={{borderRadius: '30px'}}>
             <CardActionArea>
               <CardMedia
+                className='opacity-60 hover:opacity-100 transition duration-400'
                 style={{ height: 350}}
                 component='img'
                 image={Section28Cheese}
@@ -110,6 +80,7 @@ function ProjectPage() {
           <Card className='hover:shadow-2xl' style={{borderRadius: '30px'}}>
             <CardActionArea>
               <CardMedia
+                className='opacity-60 hover:opacity-100 transition duration-400'
                 style={{ height: 350}}
                 component='img'
                 image={QRcode}
@@ -130,6 +101,7 @@ function ProjectPage() {
           <Card className='hover:shadow-2xl' style={{borderRadius: '30px'}}>
             <CardActionArea>
               <CardMedia
+                className='opacity-60 hover:opacity-100 transition duration-400'
                 style={{ height: 350}}
                 component='img'
                 image={SparkNewsAnalysis}
