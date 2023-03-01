@@ -133,7 +133,7 @@ function ProjectPage() {
             <CardActionArea>
               <CardMedia
                 component='img'
-                image='/src/assets/picturePlaceHolder.png'
+                image={PicturePlaceholder}
               />
               <CardContent>
                 <Typography gutterBottom variant='h5' component='div'>
