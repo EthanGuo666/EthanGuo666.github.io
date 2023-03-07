@@ -18,7 +18,7 @@ import SparkNewsAnalysis from '../assets/SparkNewsAnalysis.jpg';
 function ProjectPage() {
 
   return (
-    <div className='Canvas text-center'>
+    <div className='Canvas text-center' id='projects-top'>
       <br />
       <br />
       <br />

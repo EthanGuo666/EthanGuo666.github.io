@@ -24,7 +24,7 @@ import '../styles/Canvas.css';
 
 function EducationPage() {
   return (
-    <div className='Canvas flex'>
+    <div className='Canvas flex' id='education-top'>
       <div className='w-full m-auto my-16 text-center'>
         <span className='font-sans text-3xl font-bold text-stone-500'>
           Education

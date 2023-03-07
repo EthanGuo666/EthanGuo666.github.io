@@ -5,6 +5,10 @@ import LinkedIn from "../assets/LinkedIn.svg";
 import Profile from "../assets/ProfilePhoto.jpg";
 import ExpandCircleDownOutlinedIcon from "@mui/icons-material/ExpandCircleDownOutlined";
 import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import HomeIcon from '@mui/icons-material/Home';
+import SchoolIcon from '@mui/icons-material/School';
+import SourceIcon from '@mui/icons-material/Source';
 
 import { Link } from "react-scroll";
 
@@ -24,7 +28,7 @@ function HeaderBar() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutsideOfMenu);
     };
-  }, [menuRef])
+  }, [menuRef]);
 
   return (
     <div>
@@ -77,7 +81,40 @@ function HeaderBar() {
           </div>
         </nav>
       </header>
-      {menuVisible && <div ref={menuRef}>hello</div>}
+      {menuVisible && (
+        <div ref={menuRef} className='flex-x'>
+          <Link
+            to='page-top'
+            smooth
+            duration={500}
+            className='ml-4 mr-3 text-white font-bold text-center hover:cursor-pointer transition duration-300'
+            onClick={() => setMenuVisible(!menuVisible)}
+          >
+            <HomeIcon />
+            &nbsp;Home
+          </Link>
+          <Link
+            to='education-top'
+            smooth
+            duration={500}
+            className='ml-4 mr-3 text-white font-bold text-center hover:cursor-pointer transition duration-300'
+            onClick={() => setMenuVisible(!menuVisible)}
+          >
+            <SchoolIcon />
+            &nbsp;Education
+          </Link>
+          <Link
+            to='projects-top'
+            smooth
+            duration={500}
+            className='ml-4 mr-3 text-white font-bold text-center hover:cursor-pointer transition duration-300'
+            onClick={() => setMenuVisible(!menuVisible)}
+          >
+            <SourceIcon />
+            &nbsp;Projects
+          </Link>
+        </div>
+      )}
     </div>
   );
 }
