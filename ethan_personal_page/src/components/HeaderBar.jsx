@@ -87,7 +87,7 @@ function HeaderBar() {
             to='page-top'
             smooth
             duration={500}
-            className='ml-4 mr-3 text-white font-bold text-center hover:cursor-pointer transition duration-300'
+            className='ml-2 mr-3 text-white font-bold text-center hover:cursor-pointer transition duration-300'
             onClick={() => setMenuVisible(!menuVisible)}
           >
             <HomeIcon />
@@ -97,7 +97,7 @@ function HeaderBar() {
             to='education-top'
             smooth
             duration={500}
-            className='ml-4 mr-3 text-white font-bold text-center hover:cursor-pointer transition duration-300'
+            className='ml-2 mr-3 text-white font-bold text-center hover:cursor-pointer transition duration-300'
             onClick={() => setMenuVisible(!menuVisible)}
           >
             <SchoolIcon />
@@ -107,7 +107,7 @@ function HeaderBar() {
             to='projects-top'
             smooth
             duration={500}
-            className='ml-4 mr-3 text-white font-bold text-center hover:cursor-pointer transition duration-300'
+            className='ml-2 mr-3 text-white font-bold text-center hover:cursor-pointer transition duration-300'
             onClick={() => setMenuVisible(!menuVisible)}
           >
             <SourceIcon />
