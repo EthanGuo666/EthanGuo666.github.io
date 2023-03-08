@@ -9,7 +9,6 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import Typography from "@mui/material/Typography";
 import "../styles/Canvas.css";
-import PicturePlaceholder from '../assets/picturePlaceHolder.png';
 import Avartus from '../assets/Avartus.jpg';
 import Section28Cheese from '../assets/Section28Cheese.jpeg';
 import QRcode from '../assets/QRcode.jpeg';
@@ -34,7 +33,7 @@ function ProjectList() {
 
         <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-14'>
           <Card className='hover:shadow-2xl' style={{borderRadius: '30px'}}>
-            <CardActionArea onClick={() => console.log("first")}>
+            <CardActionArea href="/projects/avartus">
               <CardMedia
                 className='opacity-60 hover:opacity-100 transition duration-400'
                 style={{ height: 350}}
