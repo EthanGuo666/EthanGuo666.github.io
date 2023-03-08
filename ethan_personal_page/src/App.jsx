@@ -2,8 +2,8 @@ import reactLogo from "./assets/react.svg";
 
 import HeaderBar from "./components/HeaderBar";
 import SummaryBox from "./components/SummaryBox";
-import EducationPage from "./components/EducationPage";
-import ProjectPage from "./components/ProjectPage";
+import EducationPage from "./pages/EducationPage";
+import ProjectPage from "./pages/ProjectPage";
 
 function App() {
   return (
