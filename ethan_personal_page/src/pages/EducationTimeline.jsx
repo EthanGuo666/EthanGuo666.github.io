@@ -22,7 +22,7 @@ import Typography from "@mui/material/Typography";
 import { Image } from "@mui/icons-material";
 import '../styles/Canvas.css';
 
-function EducationPage() {
+function EducationTimeline() {
   return (
     <div className='Canvas flex' id='education-top'>
       <div className='w-full m-auto my-16 text-center'>
@@ -318,4 +318,4 @@ function EducationPage() {
   );
 }
 
-export default EducationPage;
+export default EducationTimeline;

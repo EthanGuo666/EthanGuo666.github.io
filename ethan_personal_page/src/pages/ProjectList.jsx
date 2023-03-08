@@ -15,7 +15,7 @@ import Section28Cheese from '../assets/Section28Cheese.jpeg';
 import QRcode from '../assets/QRcode.jpeg';
 import SparkNewsAnalysis from '../assets/SparkNewsAnalysis.jpg';
 
-function ProjectPage() {
+function ProjectList() {
 
   return (
     <div className='Canvas text-center' id='projects-top'>
@@ -124,4 +124,4 @@ function ProjectPage() {
   );
 }
 
-export default ProjectPage;
+export default ProjectList;
