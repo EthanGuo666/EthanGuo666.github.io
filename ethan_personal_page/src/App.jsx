@@ -1,9 +1,8 @@
 import reactLogo from "./assets/react.svg";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import HeaderBar from "./components/HeaderBar";
-import SummaryBox from "./components/SummaryBox";
-import EducationPage from "./pages/EducationPage";
-import ProjectPage from "./pages/ProjectPage";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
@@ -11,15 +10,13 @@ function App() {
       <div className='fixed w-full mx-auto p-4 z-50 bg-gradient-to-b from-black to-transparent'>
         <HeaderBar />
       </div>
-      <div className="w-full h-screen">
-        <SummaryBox />
-      </div>
-      <div className="w-full h-auto">
-        <EducationPage />
-      </div>
-      <div className="w-full h-auto">
-        <ProjectPage />
-      </div>
+
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<HomePage />}></Route>
+          <Route path='/haha' element={"haha"}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
