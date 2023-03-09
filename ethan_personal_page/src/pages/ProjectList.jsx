@@ -9,7 +9,7 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import Typography from "@mui/material/Typography";
 import "../styles/Canvas.css";
-import Avartus from '../assets/Avartus.jpg';
+import CMU from '../assets/CMU-Clear.jpeg';
 import Section28Cheese from '../assets/Section28Cheese.jpeg';
 import QRcode from '../assets/QRcode.jpeg';
 import SparkNewsAnalysis from '../assets/SparkNewsAnalysis.jpg';
@@ -38,7 +38,7 @@ function ProjectList() {
                 className='opacity-60 hover:opacity-100 transition duration-400'
                 style={{ height: 350}}
                 component='img'
-                image={Avartus}
+                image={CMU}
               />
               <CardContent>
                 <Typography gutterBottom variant='h5' component='div'>
