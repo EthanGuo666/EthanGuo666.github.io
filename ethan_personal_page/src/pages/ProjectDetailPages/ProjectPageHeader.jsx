@@ -1,7 +1,7 @@
 import React from "react";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 
-function ProjectHeader() {
+function ProjectPageHeader() {
   return (
     <div>
       <div className='fixed flex items-center w-full h-28 p-5 mx-auto z-50 bg-gradient-to-b from-black to-transparent'>
@@ -17,4 +17,4 @@ function ProjectHeader() {
   );
 }
 
-export default ProjectHeader;
+export default ProjectPageHeader;

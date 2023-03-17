@@ -12,7 +12,7 @@ import SourceIcon from '@mui/icons-material/Source';
 
 import { Link } from "react-scroll";
 
-function HeaderBar() {
+function HomePageHeaderBar() {
   const [menuVisible, setMenuVisible] = useState(false);
   const menuRef = useRef(null);
 
@@ -119,4 +119,4 @@ function HeaderBar() {
   );
 }
 
-export default HeaderBar;
+export default HomePageHeaderBar;
