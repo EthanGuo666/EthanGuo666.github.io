@@ -33,7 +33,7 @@ function ProjectList() {
 
         <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-14'>
           <Card className='hover:shadow-2xl' style={{borderRadius: '30px'}}>
-            <CardActionArea href="/projects/avartus">
+            <CardActionArea href="#/projects/avartus">
               <CardMedia
                 className='opacity-60 hover:opacity-100 transition duration-400'
                 style={{ height: 350}}
