@@ -31,14 +31,13 @@ function Avartus() {
         </div>
 
         <div className='px-6 pt-6'>
-          Fortunately, I joined this innovative project with a group of interns.
-          All of us are students on the same Master's program at CMU. Before we
-          start working on the project, it already had a functioning backend
-          built in Golang but no UI was implemented at that point. So the tasks
-          we did in this project was to construct its frontend from the scratch.
-          I completed some of its key components and functions like login, a
-          series of settings related to user account, adding/dropping device
-          page and so on.
+          Fortunately, I joined this innovative project with a group of interns
+          from CMU. Before we start working on the project, it already had a
+          functioning backend built in Golang but there is no UI implementation
+          at that point. So our job in this project was to construct its
+          frontend from the scratch. I completed some of its key components and
+          functions like login, a series of settings related to user account,
+          adding/dropping device page and so on.
         </div>
 
         {/* todo: image and text responsive to the screen size */}
@@ -52,7 +51,8 @@ function Avartus() {
         <div className='px-6 pt-0'>
           The management interface of Avartus is built with React Typescript and
           TailwindCSS. Once loging in with proper username and password, the
-          user will store a JWT token in local from the response for future communications.
+          user will store a JWT token in local from the response for future
+          communications.
         </div>
       </div>
       <PageFooter />
