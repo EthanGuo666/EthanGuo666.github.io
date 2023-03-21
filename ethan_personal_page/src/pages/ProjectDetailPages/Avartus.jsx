@@ -30,7 +30,15 @@ function Avartus() {
           remotely. This is when Avartus proved to be an indispensable tool.
         </div>
 
-        <div className='px-6 pt-6'>
+        {/* todo: image and text responsive to the screen size */}
+        <div className='m-6 items-center text-center'>
+          <div className='flex justify-center items-center'>
+            <img src={PicturePlaceHolder} className='w-1/2 rounded-2xl' />
+          </div>
+          <p className='text-xs text-gray-400'>Login Page</p>
+        </div>
+
+        <div className='px-6'>
           Fortunately, I joined this innovative project with a group of interns
           from CMU. Before we start working on the project, it already had a
           functioning backend built in Golang but there is no UI implementation
@@ -40,15 +48,14 @@ function Avartus() {
           adding/dropping device page and so on.
         </div>
 
-        {/* todo: image and text responsive to the screen size */}
         <div className='m-6 items-center text-center'>
           <div className='flex justify-center items-center'>
             <img src={PicturePlaceHolder} className='w-1/2 rounded-2xl' />
           </div>
-          <p className='text-xs text-gray-400'>Avartus Login Page</p>
+          <p className='text-xs text-gray-400'>Account Settings Page</p>
         </div>
 
-        <div className='px-6 pt-0'>
+        <div className='px-6'>
           The management interface of Avartus is built with React Typescript and
           TailwindCSS. Once loging in with proper username and password, the
           user will store a JWT token in local from the response for future
