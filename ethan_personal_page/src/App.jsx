@@ -7,6 +7,7 @@ import Avartus from "./pages/ProjectDetailPages/Avartus";
 function App() {
   return (
     <div>
+      {/* Todo: solution to github.io does not support router: HashRouter */}
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<HomePage />}></Route>
