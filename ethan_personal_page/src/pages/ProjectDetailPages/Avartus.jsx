@@ -25,10 +25,11 @@ function Avartus() {
             <span className='text-4xl'>T</span>
             he concept of Avartus was first conceived in 2020 to assist faculty
             members with their daily work at CMU. During the covid lockdown, the
-            campus complied with the SA government protocol that restricted the
-            access to public spaces for people who have symptoms. The university
-            needed a solution to manipulate the teaching facilities in building
-            remotely. This is when Avartus proved to be an indispensable tool.
+            campus complied with the SA government protocol that restricted
+            access to public spaces for people having symptoms. The university
+            needed a solution to manipulate the teaching facilities in the
+            building remotely. That is when Avartus proved to be an
+            indispensable tool.
           </div>
 
           <div className='m-6 items-center text-center'>
@@ -41,12 +42,12 @@ function Avartus() {
           <div className='px-6'>
             <p>
               Fortunately, I joined this innovative project with a group of
-              interns from CMU. Before we start working on the project, it
-              already had a functioning backend built in Golang but there is no
-              UI implementation at that point. So our job in this project was to
-              construct its frontend from the scratch. I completed some of its
-              key components and functions like login, a series of settings
-              related to user account, adding/dropping device page and so on.
+              interns from CMU. Before we started working on the project, it
+              already had a functioning backend built in Golang, but there was
+              no UI implementation. So our job in this project was to construct
+              its front end from the scratch. I completed some of its key
+              components and functions like login, a series of settings related
+              to the user account, adding/dropping device page, and so on.
             </p>
           </div>
 
@@ -60,7 +61,7 @@ function Avartus() {
           <div className='px-6'>
             <p>
               The management interface of Avartus is built with React Typescript
-              and TailwindCSS. Once loging in with proper username and password,
+              and TailwindCSS. Once logging in with proper username and password,
               the user will store a JWT token in local from the response for
               future communications.
             </p>
