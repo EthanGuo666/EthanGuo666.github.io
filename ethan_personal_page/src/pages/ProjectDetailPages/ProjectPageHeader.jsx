@@ -7,7 +7,7 @@ function ProjectPageHeader() {
       <div className='fixed flex items-center w-full h-28 p-5 mx-auto z-50 bg-gradient-to-b from-black to-transparent'>
         <a
           href='/'
-          className='text-gray-300 text-lg text-center hover:cursor-pointer hover:text-white'
+          className='text-gray-400 text-lg text-center hover:cursor-pointer hover:text-white'
         >
           <ArrowBackIosNewIcon />
           &nbsp;Back
