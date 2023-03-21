@@ -15,6 +15,7 @@ function HomePage() {
       <div className='w-full h-screen'>
         <SummaryBox />
       </div>
+      {/* todo: sticky effect of education timeline "https://tailwindcss.com/docs/position#statically-positioning-elements" */}
       <div className='w-full h-auto'>
         <EducationTimeline />
       </div>
