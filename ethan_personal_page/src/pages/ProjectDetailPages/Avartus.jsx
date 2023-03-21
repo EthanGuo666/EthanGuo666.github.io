@@ -3,6 +3,7 @@ import "../../styles/Canvas.css";
 import ProjectPageHeader from "./ProjectPageHeader";
 import CMU from "../../assets/CMU.jpg";
 import PicturePlaceHolder from "../../assets/PicturePlaceHolder.png";
+import PageFooter from "../../components/PageFooter";
 
 function Avartus() {
   return (
@@ -33,7 +34,7 @@ function Avartus() {
           same Master's program in the Heinz College of Information Systems.
         </div>
         {/* todo: image and text responsive to the screen size */}
-        <div className='m-6'>
+        <div className='flex m-6 justify-center items-center'>
           <img src={PicturePlaceHolder} className='w-1/2 rounded-2xl' />
         </div>
         <div className='px-6 pt-0'>
@@ -42,6 +43,7 @@ function Avartus() {
           setting page, adding/dropping device page and so on.
         </div>
       </div>
+      <PageFooter />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import HomePageHeaderBar from "../components/HomePageHeaderBar";
 import SummaryBox from "../components/SummaryBox";
 import EducationTimeline from "./EducationTimeline";
 import ProjectList from "./ProjectList";
+import PageFooter from "../components/PageFooter";
 
 function HomePage() {
   return (
@@ -20,6 +21,7 @@ function HomePage() {
       <div className='w-full h-auto'>
         <ProjectList />
       </div>
+      <PageFooter />
     </div>
   );
 }
