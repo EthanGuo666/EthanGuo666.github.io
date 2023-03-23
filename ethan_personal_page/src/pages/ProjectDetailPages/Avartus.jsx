@@ -3,6 +3,8 @@ import "../../styles/Canvas.css";
 import ProjectPageHeader from "./ProjectPageHeader";
 import CMU from "../../assets/CMU.jpg";
 import PicturePlaceHolder from "../../assets/PicturePlaceHolder.png";
+import AvartusLoginPage from "../../assets/AvartusLoginPage.jpeg";
+import AvartusSettingsPage from "../../assets/AvartusSettingsPage.jpeg";
 import PageFooter from "../../components/PageFooter";
 
 function Avartus() {
@@ -34,7 +36,7 @@ function Avartus() {
 
           <div className='m-6 items-center text-center'>
             <div className='flex justify-center items-center'>
-              <img src={PicturePlaceHolder} className='w-1/2 rounded-2xl' />
+              <img src={AvartusLoginPage} className='w-1/2 rounded-md shadow-xl' />
             </div>
             <p className='text-xs text-gray-400'>Login Page</p>
           </div>
@@ -53,7 +55,7 @@ function Avartus() {
 
           <div className='m-6 items-center text-center'>
             <div className='flex justify-center items-center'>
-              <img src={PicturePlaceHolder} className='w-1/2 rounded-2xl' />
+              <img src={AvartusSettingsPage} className='w-1/2 rounded-md shadow-xl' />
             </div>
             <p className='text-xs text-gray-400'>Account Settings Page</p>
           </div>
