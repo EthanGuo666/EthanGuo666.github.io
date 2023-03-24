@@ -36,7 +36,7 @@ function Avartus() {
 
           <div className='m-6 items-center text-center'>
             <div className='flex justify-center items-center'>
-              <img src={AvartusLoginPage} className='w-1/2 rounded-md shadow-xl' />
+              <img src={AvartusLoginPage} className='w-3/5 rounded-md shadow-xl' />
             </div>
             <p className='text-xs text-gray-400'>Login Page</p>
           </div>
@@ -55,7 +55,7 @@ function Avartus() {
 
           <div className='m-6 items-center text-center'>
             <div className='flex justify-center items-center'>
-              <img src={AvartusSettingsPage} className='w-1/2 rounded-md shadow-xl' />
+              <img src={AvartusSettingsPage} className='w-3/5 rounded-md shadow-xl' />
             </div>
             <p className='text-xs text-gray-400'>Account Settings Page</p>
           </div>
