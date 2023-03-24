@@ -1,11 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
-import Github from "../assets/Github.svg";
-import Instagram from "../assets/Instagram.png";
-import LinkedIn from "../assets/LinkedIn.svg";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Profile from "../assets/ProfilePhoto.jpg";
 import ExpandCircleDownOutlinedIcon from "@mui/icons-material/ExpandCircleDownOutlined";
 import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import HomeIcon from '@mui/icons-material/Home';
 import SchoolIcon from '@mui/icons-material/School';
 import SourceIcon from '@mui/icons-material/Source';
@@ -55,28 +54,16 @@ function HomePageHeaderBar() {
 
         <nav className='flex'>
           <div className='flex flex-row items-center'>
-            <a href='https://github.com/EthanGuo666' className=''>
-              <img
-                src={Github}
-                className='w-7 h-7 mx-4 my=2 rounded-full bg-gray-600 hover:bg-gray-300 transition duration-300'
-                alt=''
-              />
+            <a href='https://github.com/EthanGuo666' className="text-gray-300 hover:text-white">
+              <GitHubIcon fontSize="large"  className="mx-1"/>
             </a>
 
-            <a href='https://www.instagram.com/guo_yixuan666/'>
-              <img
-                src={Instagram}
-                className='w-7 h-7 mx-4 my=2 rounded-full bg-gray-200 hover:bg-white transition duration-300'
-                alt=''
-              />
+            <a href='https://www.instagram.com/guo_yixuan666/' className="text-gray-300 hover:text-white">
+              <InstagramIcon fontSize="large" className="mx-1"/>
             </a>
 
-            <a href='https://www.linkedin.com/in/yixuan-guo-35372b1a9/'>
-              <img
-                src={LinkedIn}
-                className='w-7 h-7 mx-4 my=2 rounded-full bg-gray-600 hover:bg-gray-300 transition duration-300'
-                alt=''
-              />
+            <a href='https://www.linkedin.com/in/yixuan-guo-35372b1a9/' className="text-gray-300 hover:text-white">
+              <LinkedInIcon fontSize="large" className="mx-1"/>
             </a>
           </div>
         </nav>
