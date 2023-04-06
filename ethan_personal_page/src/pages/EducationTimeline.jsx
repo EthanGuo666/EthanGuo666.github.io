@@ -53,6 +53,7 @@ function EducationTimeline() {
         </span>
         <br />
         <br />
+        <br />
 
         <Timeline
           sx={{
