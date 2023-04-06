@@ -1,7 +1,5 @@
 import Timeline from "@mui/lab/Timeline";
-import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineOppositeContent, {
   timelineOppositeContentClasses,
@@ -10,10 +8,9 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import React, { useEffect, useRef } from "react";
 
 import "../styles/Canvas.css";
-import { colors } from "@mui/material";
 
 function EducationTimeline() {
-  const refs = Array.from({ length: 10 }, () => useRef(null));
+  const refs = Array.from({ length: 30 }, () => useRef(null));
 
   useEffect(() => {
     function handleScroll() {
@@ -25,10 +22,18 @@ function EducationTimeline() {
 
         if (rect?.top < halfHeight) {
           element?.classList.add("text-black");
-          element?.classList.remove("text-gray-400");
+          element?.classList.remove("text-zinc-400");
+          if (element?.id === "dotOrLine") {
+            element?.classList.add("bg-black");
+            element?.classList.remove("bg-zinc-400");
+          }
         } else {
           element?.classList.remove("text-black");
-          element?.classList.add("text-gray-400");
+          element?.classList.add("text-zinc-400");
+          if (element?.id === "dotOrLine") {
+            element?.classList.remove("bg-black");
+            element?.classList.add("bg-zinc-400");
+          }
         }
       });
     }
@@ -60,30 +65,12 @@ function EducationTimeline() {
             <TimelineItem>
               <TimelineOppositeContent>2016 Sep</TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent>Eat</TimelineContent>
-            </TimelineItem>
-          </div>
-
-          <div ref={refs[1]}>
-            <TimelineItem>
-              <TimelineOppositeContent>2016 Sep</TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent>Eat</TimelineContent>
-            </TimelineItem>
-          </div>
-
-          <div ref={refs[2]}>
-            <TimelineItem>
-              <TimelineOppositeContent>2016 Sep</TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
+                <div
+                  id='dotOrLine'
+                  ref={refs[1]}
+                  className='w-2 h-2 mt-3 mb-3 rounded-full '
+                />
+                <div id='dotOrLine' ref={refs[2]} className='w-0.5 h-10'></div>
               </TimelineSeparator>
               <TimelineContent>Eat</TimelineContent>
             </TimelineItem>
@@ -91,10 +78,104 @@ function EducationTimeline() {
 
           <div ref={refs[3]}>
             <TimelineItem>
+              <TimelineOppositeContent>2016 Sep</TimelineOppositeContent>
+              <TimelineSeparator>
+                <div
+                  id='dotOrLine'
+                  ref={refs[4]}
+                  className='w-2 h-2 mt-3 mb-3 rounded-full '
+                />
+                <div id='dotOrLine' ref={refs[5]} className='w-0.5 h-10'></div>
+              </TimelineSeparator>
+              <TimelineContent>Eat</TimelineContent>
+            </TimelineItem>
+          </div>
+
+          <div ref={refs[6]}>
+            <TimelineItem>
+              <TimelineOppositeContent>2016 Sep</TimelineOppositeContent>
+              <TimelineSeparator>
+                <div
+                  id='dotOrLine'
+                  ref={refs[7]}
+                  className='w-2 h-2 mt-3 mb-3 rounded-full '
+                />
+                <div id='dotOrLine' ref={refs[8]} className='w-0.5 h-10'></div>
+              </TimelineSeparator>
+              <TimelineContent>Eat</TimelineContent>
+            </TimelineItem>
+          </div>
+
+          <div ref={refs[9]}>
+            <TimelineItem>
+              <TimelineOppositeContent>2016 Sep</TimelineOppositeContent>
+              <TimelineSeparator>
+                <div
+                  id='dotOrLine'
+                  ref={refs[10]}
+                  className='w-2 h-2 mt-3 mb-3 rounded-full '
+                />
+                <div id='dotOrLine' ref={refs[11]} className='w-0.5 h-10'></div>
+              </TimelineSeparator>
+              <TimelineContent>Eat</TimelineContent>
+            </TimelineItem>
+          </div>
+
+          <div ref={refs[12]}>
+            <TimelineItem>
+              <TimelineOppositeContent>2016 Sep</TimelineOppositeContent>
+              <TimelineSeparator>
+                <div
+                  id='dotOrLine'
+                  ref={refs[13]}
+                  className='w-2 h-2 mt-3 mb-3 rounded-full '
+                />
+                <div id='dotOrLine' ref={refs[14]} className='w-0.5 h-10'></div>
+              </TimelineSeparator>
+              <TimelineContent>Eat</TimelineContent>
+            </TimelineItem>
+          </div>
+
+          <div ref={refs[15]}>
+            <TimelineItem>
+              <TimelineOppositeContent>2016 Sep</TimelineOppositeContent>
+              <TimelineSeparator>
+                <div
+                  id='dotOrLine'
+                  ref={refs[16]}
+                  className='w-2 h-2 mt-3 mb-3 rounded-full '
+                />
+                <div id='dotOrLine' ref={refs[17]} className='w-0.5 h-10'></div>
+              </TimelineSeparator>
+              <TimelineContent>Eat</TimelineContent>
+            </TimelineItem>
+          </div>
+
+          <div ref={refs[18]}>
+            <TimelineItem>
+              <TimelineOppositeContent>2016 Sep</TimelineOppositeContent>
+              <TimelineSeparator>
+                <div
+                  id='dotOrLine'
+                  ref={refs[19]}
+                  className='w-2 h-2 mt-3 mb-3 rounded-full '
+                />
+                <div id='dotOrLine' ref={refs[20]} className='w-0.5 h-10'></div>
+              </TimelineSeparator>
+              <TimelineContent>Eat</TimelineContent>
+            </TimelineItem>
+          </div>
+
+          <div ref={refs[21]}>
+            <TimelineItem>
               <TimelineOppositeContent>2017 Oct</TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
+                <div
+                  id='dotOrLine'
+                  ref={refs[22]}
+                  className='w-2 h-2 mt-3 mb-3 rounded-full '
+                />
+                {/* <div id='dotOrLine' ref={refs[11]} className='w-0.5 h-10'></div> */}
               </TimelineSeparator>
               <TimelineContent>Code</TimelineContent>
             </TimelineItem>
