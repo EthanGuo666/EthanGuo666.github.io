@@ -71,7 +71,7 @@ function EducationTimeline() {
                   ref={refs[1]}
                   className='w-2 h-2 my-3 rounded-full '
                 />
-                <div id='dotOrLine' ref={refs[2]} className='w-0.5 h-12'></div>
+                <div id='dotOrLine' ref={refs[2]} className='w-0.5 h-10'></div>
               </TimelineSeparator>
               <TimelineContent>
                 Beijing Institute of Technology (Undergraduate Admission)
