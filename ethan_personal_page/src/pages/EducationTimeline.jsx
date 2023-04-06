@@ -58,7 +58,7 @@ function EducationTimeline() {
         <Timeline
           sx={{
             [`& .${timelineOppositeContentClasses.root}`]: {
-              flex: 0.35,
+              flex: 0.3,
             },
           }}
         >
@@ -69,11 +69,13 @@ function EducationTimeline() {
                 <div
                   id='dotOrLine'
                   ref={refs[1]}
-                  className='w-2 h-2 mt-3 mb-3 rounded-full '
+                  className='w-2 h-2 my-3 rounded-full '
                 />
-                <div id='dotOrLine' ref={refs[2]} className='w-0.5 h-10'></div>
+                <div id='dotOrLine' ref={refs[2]} className='w-0.5 h-12'></div>
               </TimelineSeparator>
-              <TimelineContent>Eat</TimelineContent>
+              <TimelineContent>
+                Beijing Institute of Technology (Undergraduate Admission)
+              </TimelineContent>
             </TimelineItem>
           </div>
 
@@ -84,7 +86,7 @@ function EducationTimeline() {
                 <div
                   id='dotOrLine'
                   ref={refs[4]}
-                  className='w-2 h-2 mt-3 mb-3 rounded-full '
+                  className='w-2 h-2 my-3 rounded-full '
                 />
                 <div id='dotOrLine' ref={refs[5]} className='w-0.5 h-10'></div>
               </TimelineSeparator>
@@ -99,7 +101,7 @@ function EducationTimeline() {
                 <div
                   id='dotOrLine'
                   ref={refs[7]}
-                  className='w-2 h-2 mt-3 mb-3 rounded-full '
+                  className='w-2 h-2 my-3 rounded-full '
                 />
                 <div id='dotOrLine' ref={refs[8]} className='w-0.5 h-10'></div>
               </TimelineSeparator>
@@ -114,7 +116,7 @@ function EducationTimeline() {
                 <div
                   id='dotOrLine'
                   ref={refs[10]}
-                  className='w-2 h-2 mt-3 mb-3 rounded-full '
+                  className='w-2 h-2 my-3 rounded-full '
                 />
                 <div id='dotOrLine' ref={refs[11]} className='w-0.5 h-10'></div>
               </TimelineSeparator>
@@ -129,7 +131,7 @@ function EducationTimeline() {
                 <div
                   id='dotOrLine'
                   ref={refs[13]}
-                  className='w-2 h-2 mt-3 mb-3 rounded-full '
+                  className='w-2 h-2 my-3 rounded-full '
                 />
                 <div id='dotOrLine' ref={refs[14]} className='w-0.5 h-10'></div>
               </TimelineSeparator>
@@ -144,7 +146,7 @@ function EducationTimeline() {
                 <div
                   id='dotOrLine'
                   ref={refs[16]}
-                  className='w-2 h-2 mt-3 mb-3 rounded-full '
+                  className='w-2 h-2 my-3 rounded-full '
                 />
                 <div id='dotOrLine' ref={refs[17]} className='w-0.5 h-10'></div>
               </TimelineSeparator>
@@ -159,7 +161,7 @@ function EducationTimeline() {
                 <div
                   id='dotOrLine'
                   ref={refs[19]}
-                  className='w-2 h-2 mt-3 mb-3 rounded-full '
+                  className='w-2 h-2 my-3 rounded-full '
                 />
                 <div id='dotOrLine' ref={refs[20]} className='w-0.5 h-10'></div>
               </TimelineSeparator>
@@ -174,7 +176,7 @@ function EducationTimeline() {
                 <div
                   id='dotOrLine'
                   ref={refs[22]}
-                  className='w-2 h-2 mt-3 mb-3 rounded-full '
+                  className='w-2 h-2 my-3 rounded-full '
                 />
                 {/* <div id='dotOrLine' ref={refs[11]} className='w-0.5 h-10'></div> */}
               </TimelineSeparator>
