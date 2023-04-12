@@ -21,18 +21,18 @@ function EducationTimeline() {
         const rect = element?.getBoundingClientRect();
 
         if (rect?.top < halfHeight) {
-          element?.classList.add("text-black");
-          element?.classList.remove("text-zinc-400");
+          element?.classList.add("text-stone-600");
+          element?.classList.remove("text-zinc-300");
           if (element?.id === "dotOrLine") {
-            element?.classList.add("bg-black");
-            element?.classList.remove("bg-zinc-400");
+            element?.classList.add("bg-stone-600");
+            element?.classList.remove("bg-zinc-300");
           }
         } else {
-          element?.classList.remove("text-black");
-          element?.classList.add("text-zinc-400");
+          element?.classList.remove("text-stone-600");
+          element?.classList.add("text-zinc-300");
           if (element?.id === "dotOrLine") {
-            element?.classList.remove("bg-black");
-            element?.classList.add("bg-zinc-400");
+            element?.classList.remove("bg-stone-600");
+            element?.classList.add("bg-zinc-300");
           }
         }
       });
