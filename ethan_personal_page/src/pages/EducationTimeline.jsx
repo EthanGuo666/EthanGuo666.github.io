@@ -8,6 +8,8 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import React, { useEffect, useRef } from "react";
 
 import "../styles/Canvas.css";
+import { School } from "@mui/icons-material";
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 
 function EducationTimeline() {
   const refs = Array.from({ length: 50 }, () => useRef(null));
@@ -58,24 +60,26 @@ function EducationTimeline() {
         <Timeline
           sx={{
             [`& .${timelineOppositeContentClasses.root}`]: {
-              flex: 0.3,
+              flex: 0.25,
             },
           }}
         >
           <div ref={refs[0]}>
-            <TimelineItem id='lll' className='h-24'>
+            <TimelineItem className='h-24'>
               <TimelineOppositeContent>2016 Sep</TimelineOppositeContent>
               <TimelineSeparator>
                 <div id='dotOrLine' ref={refs[1]} className='w-0.5 h-5' />
-                <div
-                  id='dotOrLine'
-                  ref={refs[2]}
-                  className='w-2 h-2 rounded-full z-10'
-                />
+                <School />
                 <div id='dotOrLine' ref={refs[3]} className='w-0.5 h-20' />
               </TimelineSeparator>
               <TimelineContent>
-                Beijing Institute of Technology (Undergraduate Admission)
+                <a
+                  className='font-bold hover:text-gray-400 hover:cursor-pointer'
+                  href='https://www.bit.edu.cn/'
+                >
+                  Beijing Institute of Technology
+                </a>
+                <div className='text-xs'>Undergraduate Admission</div>
               </TimelineContent>
             </TimelineItem>
           </div>
@@ -83,7 +87,7 @@ function EducationTimeline() {
           <div ref={refs[4]}>
             <TimelineItem>
               <TimelineOppositeContent>2017 Jun</TimelineOppositeContent>
-              <TimelineSeparator>
+              <TimelineSeparator className='mx-2'>
                 <div id='dotOrLine' ref={refs[5]} className='w-0.5 h-5' />
                 <div
                   id='dotOrLine'
@@ -92,14 +96,17 @@ function EducationTimeline() {
                 />
                 <div id='dotOrLine' ref={refs[7]} className='w-0.5 h-20' />
               </TimelineSeparator>
-              <TimelineContent>2nd-class schoolarship</TimelineContent>
+              <TimelineContent>
+                <div>2nd-class schoolarship</div>
+                <div className='text-xs'>School of Computer Science</div>
+              </TimelineContent>
             </TimelineItem>
           </div>
 
           <div ref={refs[8]}>
             <TimelineItem>
-              <TimelineOppositeContent>2016 Sep</TimelineOppositeContent>
-              <TimelineSeparator>
+              <TimelineOppositeContent>2018 Sep</TimelineOppositeContent>
+              <TimelineSeparator className='mx-2'>
                 <div id='dotOrLine' ref={refs[9]} className='w-0.5 h-5' />
                 <div
                   id='dotOrLine'
@@ -108,14 +115,19 @@ function EducationTimeline() {
                 />
                 <div id='dotOrLine' ref={refs[11]} className='w-0.5 h-20' />
               </TimelineSeparator>
-              <TimelineContent>Eat</TimelineContent>
+              <TimelineContent>
+                <div>Peking University, Beijing</div>
+                <div className='text-xs'>
+                  Research Assistant, Software Engineering Institute
+                </div>
+              </TimelineContent>
             </TimelineItem>
           </div>
 
           <div ref={refs[12]}>
             <TimelineItem>
-              <TimelineOppositeContent>2016 Sep</TimelineOppositeContent>
-              <TimelineSeparator>
+              <TimelineOppositeContent>2020 Jun</TimelineOppositeContent>
+              <TimelineSeparator className='mx-2'>
                 <div id='dotOrLine' ref={refs[13]} className='w-0.5 h-5' />
                 <div
                   id='dotOrLine'
@@ -124,46 +136,63 @@ function EducationTimeline() {
                 />
                 <div id='dotOrLine' ref={refs[15]} className='w-0.5 h-20' />
               </TimelineSeparator>
-              <TimelineContent>Eat</TimelineContent>
+              <TimelineContent>
+                <div>Graduated from BIT</div>
+                <div className='text-xs'>
+                  Bachelor of Science in Computer Science
+                </div>
+              </TimelineContent>
             </TimelineItem>
           </div>
 
           <div ref={refs[16]}>
             <TimelineItem>
-              <TimelineOppositeContent>2016 Sep</TimelineOppositeContent>
+              <TimelineOppositeContent>2020 Aug</TimelineOppositeContent>
               <TimelineSeparator>
                 <div id='dotOrLine' ref={refs[17]} className='w-0.5 h-5' />
-                <div
-                  id='dotOrLine'
-                  ref={refs[18]}
-                  className='w-2 h-2 rounded-full z-10'
-                />
+                <School />
                 <div id='dotOrLine' ref={refs[19]} className='w-0.5 h-20' />
               </TimelineSeparator>
-              <TimelineContent>Eat</TimelineContent>
+              <TimelineContent>
+                <a
+                  className='font-bold hover:text-gray-400 hover:cursor-pointer'
+                  href='https://www.cmu.edu/'
+                >
+                  Carnegie Mellon University
+                </a>
+                <div className='text-xs'>
+                  Heinz College of Information Systems Management
+                </div>
+              </TimelineContent>
             </TimelineItem>
           </div>
 
           <div ref={refs[20]}>
             <TimelineItem>
-              <TimelineOppositeContent>2016 Sep</TimelineOppositeContent>
+              <TimelineOppositeContent>2020 Sep</TimelineOppositeContent>
               <TimelineSeparator>
                 <div id='dotOrLine' ref={refs[21]} className='w-0.5 h-5' />
-                <div
-                  id='dotOrLine'
-                  ref={refs[22]}
-                  className='w-2 h-2 rounded-full z-10'
-                />
+                <EmojiEventsIcon />
                 <div id='dotOrLine' ref={refs[23]} className='w-0.5 h-20' />
               </TimelineSeparator>
-              <TimelineContent>Eat</TimelineContent>
+              <TimelineContent>
+                <a
+                  className='font-bold hover:text-gray-400 hover:cursor-pointer'
+                  href='https://www.cmu.edu/'
+                >
+                  Runner-up of GovHack in South Australia
+                </a>
+                <div className='text-xs'>
+                  Largest Data Hackthon in Australia
+                </div>
+              </TimelineContent>
             </TimelineItem>
           </div>
 
           <div ref={refs[24]}>
             <TimelineItem>
               <TimelineOppositeContent>2016 Sep</TimelineOppositeContent>
-              <TimelineSeparator>
+              <TimelineSeparator className='mx-2'>
                 <div id='dotOrLine' ref={refs[25]} className='w-0.5 h-5' />
                 <div
                   id='dotOrLine'
@@ -172,23 +201,12 @@ function EducationTimeline() {
                 />
                 <div id='dotOrLine' ref={refs[27]} className='w-0.5 h-20' />
               </TimelineSeparator>
-              <TimelineContent>Eat</TimelineContent>
-            </TimelineItem>
-          </div>
-
-          <div ref={refs[28]}>
-            <TimelineItem>
-              <TimelineOppositeContent>2017 Oct</TimelineOppositeContent>
-              <TimelineSeparator>
-                <div id='dotOrLine' ref={refs[29]} className='w-0.5 h-5' />
-                <div
-                  id='dotOrLine'
-                  ref={refs[30]}
-                  className='w-2 h-2 rounded-full z-10'
-                />
-                <div id='dotOrLine' ref={refs[31]} className='w-0.5 h-20' />
-              </TimelineSeparator>
-              <TimelineContent>Code</TimelineContent>
+              <TimelineContent>
+                <div>Graduated from CMU</div>
+                <div className='text-xs'>
+                  Master of Science in Information Technology
+                </div>
+              </TimelineContent>
             </TimelineItem>
           </div>
         </Timeline>
