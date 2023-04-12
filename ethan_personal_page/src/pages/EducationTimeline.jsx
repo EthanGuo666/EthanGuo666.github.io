@@ -183,7 +183,7 @@ function EducationTimeline() {
                   Runner-up of GovHack in South Australia
                 </a>
                 <div className='text-xs'>
-                  Largest Data Hackthon in Australia
+                  Govhack, the Largest Data Hackthon in Australia
                 </div>
               </TimelineContent>
             </TimelineItem>
