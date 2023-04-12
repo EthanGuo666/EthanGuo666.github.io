@@ -178,7 +178,7 @@ function EducationTimeline() {
               <TimelineContent>
                 <a
                   className='font-bold hover:text-gray-400 hover:cursor-pointer'
-                  href='https://www.cmu.edu/'
+                  href='https://2020.hackerspace.govhack.org/profiles/yixuan_guo'
                 >
                   Runner-up of GovHack in South Australia
                 </a>
