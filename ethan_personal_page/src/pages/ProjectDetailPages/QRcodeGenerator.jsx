@@ -99,8 +99,7 @@ function QRcodeGenerator() {
               We implemented the project in Java and deployed its compiled
               docker image on AWS using Kubernetes. In addition to the
               requirements mentioned earlier, we deploited the performance of
-              back-end service and achieve a required response rate with a limit
-              of budget. Our service eventually reached up to 70,000 rps within
+              back-end service and achieved an RPS (response per second) of up to 70,000 within
               a hourly budget of $0.5/h.
             </p>
           </div>
