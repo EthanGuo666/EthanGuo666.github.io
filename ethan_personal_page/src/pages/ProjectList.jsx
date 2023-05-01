@@ -7,6 +7,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import CMU from "../assets/CMU-Clear.jpeg";
 import QRcode from "../assets/QRcode.jpeg";
+import AWS from "../assets/AWS.png";
 import Section28Cheese from "../assets/Section28Cheese.jpeg";
 import SparkNewsAnalysis from "../assets/SparkNewsAnalysis.jpg";
 import "../styles/Canvas.css";
@@ -56,7 +57,7 @@ function ProjectList() {
                 className='opacity-60 hover:opacity-100 transition duration-400'
                 style={{ height: 350 }}
                 component='img'
-                image={QRcode}
+                image={AWS}
               />
               <CardContent>
                 <Typography gutterBottom variant='h5' component='div'>
