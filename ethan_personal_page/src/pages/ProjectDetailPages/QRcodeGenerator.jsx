@@ -1,9 +1,8 @@
 import React from "react";
-import PicturePlaceHolder from "../../assets/PicturePlaceHolder.png";
-import QRcodeProcessFlow from "../../assets/QRcodeProcessFlow.jpg";
-import QRcodeTemplate from "../../assets/QRcodeTemplate.jpg";
 import QRcodeGeneratorArchitecture from "../../assets/QRcodeGeneratorArchitecture.jpg";
 import QRcodeGeneratorBlurred from "../../assets/QRcodeGeneratorBlurred.jpg";
+import QRcodeProcessFlow from "../../assets/QRcodeProcessFlow.jpg";
+import QRcodeTemplate from "../../assets/QRcodeTemplate.jpg";
 import PageFooter from "../../components/PageFooter";
 import "../../styles/Canvas.css";
 import ProjectPageHeader from "./ProjectPageHeader";
@@ -13,7 +12,10 @@ function QRcodeGenerator() {
     <div>
       <ProjectPageHeader />
 
-      <img src={QRcodeGeneratorBlurred} className='w-screen h-80 object-cover' />
+      <img
+        src={QRcodeGeneratorBlurred}
+        className='w-screen h-80 object-cover'
+      />
       <div className='absolute inset-0 w-full pt-32 text-center'>
         <h1 className='text-white text-4xl font-serif'>QRcode Generator</h1>
         <p className='text-gray-200 font-extralight italic'>
@@ -49,17 +51,17 @@ function QRcodeGenerator() {
             <p>
               The image above shows the whole process in QR code generation.
               Given a string like "CC is good", the backend will parse the
-              words, fill the bitstream payload into an empty QR code in a
-              special way which will be explained later, and vice versa.
+              words, fill the bitstream payload into an empty QR code, and vice
+              versa.
             </p>
           </div>
 
           <div className='px-6 pt-6'>
             <p>
-              As you see here we have a QRcode template, where only the gray
-              area can be filled with the data payload, One black square
-              represents a 1 and a white represents a zero. The rest part is
-              fixed and consists of black and white stripes and patterns.
+              As you see here we have a 25*25 QR code template. But only the
+              gray area can be filled with the data payload, the rest part which
+              formed by black and white stripes and patterns is fixed. One black
+              square represents a 1 and a white represents a zero.
             </p>
           </div>
 
@@ -76,11 +78,30 @@ function QRcodeGenerator() {
           <div className='px-6'>
             <p>
               According to the project requirements, we are supposed to fill in
-              the QR code from the bottom right cell and follow the red line in
-              a zigzag way going up and down until the whole QR code is filled
-              with data we extracted from the sentence, which means we need to
-              skip the squares that have been taken up by patterns and stripes.
-              This is the most challenging part of this project.
+              the QR code from the right bottom cell and follow the red line
+              going up and down all the way until we fill the whole QR code with
+              data we extracted from the sentence, which means we need to skip
+              the squares that have been occupied by patterns and stripes.
+            </p>
+          </div>
+
+          <div className='px-6 pt-6'>
+            <p>
+              It is easy to think of a brutal force solution. First, we need a
+              HashMap to record the mapping from a linear string to the position
+              in a 2D QR code. It is simple but the cost is you have to access
+              the HashMap everytime you want to fill in a bit.
+            </p>
+          </div>
+
+          <div className='px-6 pt-6'>
+            <p>
+              There is a more elegent solution to this problem. We can traverse
+              from the right bottom of the QR code, and fill 2 squares at one
+              time. Use a direction flag to mark whether we are moving upward or
+              downward. If the current position is in the patterns or stripes,
+              we move to the next position. If the current position is the
+              border of the QR code, change the direction flag.
             </p>
           </div>
 
@@ -91,16 +112,18 @@ function QRcodeGenerator() {
                 className='w-full rounded-md shadow-xl'
               />
             </div>
-            <p className='text-xs text-gray-400'>QRcode Generator Architecture</p>
+            <p className='text-xs text-gray-400'>
+              QRcode Generator Architecture
+            </p>
           </div>
 
           <div className='px-6'>
             <p>
               We implemented the project in Java and deployed its compiled
-              docker image on AWS using Kubernetes. In addition to the
-              requirements mentioned earlier, we deploited the performance of
-              back-end service and achieved an RPS (response per second) of up to 70,000 within
-              a hourly budget of $0.5/h.
+              docker image on AWS using Kubernetes. To further fine-tuning the
+              performance of this Java service, we deploited it performance and
+              achieved an RPS (response per second) of up to 70,000 within a
+              hourly budget of $0.5/h.
             </p>
           </div>
         </div>
