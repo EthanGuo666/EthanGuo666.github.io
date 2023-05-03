@@ -121,7 +121,7 @@ function QRcodeGenerator() {
             <p>
               We implemented the project in Java and deployed its compiled
               docker image on AWS using Kubernetes. To further fine-tuning the
-              performance of this Java service, we deploited it performance and
+              performance of this Java service, we deploited its performance and
               achieved an RPS (response per second) of up to 70,000 within a
               hourly budget of $0.5/h.
             </p>
