@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/Canvas.css";
 import ProjectPageHeader from "./ProjectPageHeader";
 import CMU from "../../assets/CMU.jpg";
+import SparkNewsAnalysisBlurred from "../../assets/SparkNewsAnalysisBlurred.jpg";
 import PicturePlaceHolder from "../../assets/PicturePlaceHolder.png";
 import AvartusLoginPage from "../../assets/AvartusLoginPage.jpeg";
 import AvartusSettingsPage from "../../assets/AvartusSettingsPage.jpeg";
@@ -12,10 +13,10 @@ function SparkNewsAnalysis() {
     <div>
       <ProjectPageHeader />
 
-      <img src={PicturePlaceHolder} className='w-screen h-80 object-cover' />
+      <img src={SparkNewsAnalysisBlurred} className='w-screen h-80 object-cover' />
       <div className='absolute inset-0 w-full pt-32 text-center'>
         <h1 className='text-white text-4xl font-serif'>Spark News Analysis</h1>
-        <p className='text-gray-200 font-extralight italic'>
+        <p className='text-white font-extralight italic'>
           Undergraduate thesis project:
           <br />a data analysis pipeline with Apache Spark
         </p>
