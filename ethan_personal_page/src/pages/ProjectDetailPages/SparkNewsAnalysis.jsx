@@ -49,15 +49,15 @@ function SparkNewsAnalysis() {
 
           <div className='px-6'>
             <p>
-              Due to the breakout of Covid-19, we don't have the chance to
+              Due to the breakout of Covid-19, we didn't have the chance to
               utilize the cluster in the school. Therefore, to execute the
               computation, I used two VMs running on my physical PC to simulate
               the cluster. Looking back now, I feel I was so silly. It would not
               cost too much to lease a cluster with Spark environment configured
               from AliCloud or AWS, but it would have been a lot faster. It's
               amazing that during the defense, no one brought up this point.🤫 I
-              guess they were just being nice. Not judging anyone, I love BIT so
-              much...lol
+              guess they were just being nice. Not judging anyone, I love BIT
+              very much...lol
             </p>
           </div>
 
@@ -87,8 +87,8 @@ function SparkNewsAnalysis() {
               website. The urls that I collected were stored in a txt file for
               later use. Then, my script would brutalforcely visit all the urls
               to grab every single news article from the website using python.
-              This work takes about one week because there were always tricky
-              bugs coming out and the data file became noticiably large.
+              This work took about one week because there were always tricky
+              bugs coming out and the data was noticiably large.
             </p>
           </div>
 
@@ -118,14 +118,20 @@ function SparkNewsAnalysis() {
               the words that appears commonly but does not contain much useful
               information, like "the", "a", "an", etc. Then, I used a tokenizor
               to split the document into words. The next step is to use the
-              words to generate vectors.
+              words to generate vectors. It took me a lot of time to figure out
+              the mechanism of Spark, and its APIs.
             </p>
           </div>
 
           <div className='px-6 pt-6'>
             <p>
               You can find the code for this project on my github repo.{" "}
-              <a className="text-blue-400" href="https://github.com/EthanGuo666/SparkNewsAnalysis">Spark News Analysis</a>
+              <a
+                className='text-blue-400'
+                href='https://github.com/EthanGuo666/SparkNewsAnalysis'
+              >
+                Spark News Analysis
+              </a>
             </p>
           </div>
         </div>
