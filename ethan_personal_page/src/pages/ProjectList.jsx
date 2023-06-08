@@ -74,28 +74,6 @@ function ProjectList() {
 
         <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-14'>
           <Card className='hover:shadow-2xl' style={{ borderRadius: "30px" }}>
-            <CardActionArea href='#/projects/section28cheese'>
-              <CardMedia
-                className='opacity-60 hover:opacity-100 transition duration-400'
-                style={{ height: 350 }}
-                component='img'
-                image={Section28Cheese}
-              />
-              <CardContent>
-                <Typography gutterBottom variant='h5' component='div'>
-                  Section 28 Cheese
-                </Typography>
-                <Typography variant='body2' color='text.secondary'>
-                  The digitalization solution for
-                  <br />a prize-winning cheese manufacturer.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </div>
-
-        <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-14'>
-          <Card className='hover:shadow-2xl' style={{ borderRadius: "30px" }}>
             <CardActionArea  href='#/projects/sparknewsanalysis'>
               <CardMedia
                 className='opacity-60 hover:opacity-100 transition duration-400'
@@ -110,6 +88,28 @@ function ProjectList() {
                 <Typography variant='body2' color='text.secondary'>
                   Undergraduate thesis project:
                   <br />a data analysis pipeline with Apache Spark
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </div>
+
+        <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-14'>
+          <Card className='hover:shadow-2xl' style={{ borderRadius: "30px" }}>
+            <CardActionArea href='#/projects/section28cheese'>
+              <CardMedia
+                className='opacity-60 hover:opacity-100 transition duration-400'
+                style={{ height: 350 }}
+                component='img'
+                image={Section28Cheese}
+              />
+              <CardContent>
+                <Typography gutterBottom variant='h5' component='div'>
+                  Section 28 Cheese
+                </Typography>
+                <Typography variant='body2' color='text.secondary'>
+                  The digitalization solution for
+                  <br />a prize-winning cheese manufacturer.
                 </Typography>
               </CardContent>
             </CardActionArea>
