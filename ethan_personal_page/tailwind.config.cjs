@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('./src/assets/Background.jpg')",
-        'footer-texture': "url('./src/assets/Background.jpg')",
+        'footer-texture': "url('./src/assets/Background.jpg')"
+      },
+      backgroundColor: {
+        'canvas2': '#F0DAB5'
       }
     },
   },
