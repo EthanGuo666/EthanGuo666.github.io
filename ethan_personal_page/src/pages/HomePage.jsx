@@ -23,9 +23,10 @@ function HomePage() {
       <div className='w-full h-auto'>
         <ProjectCarousel />
       </div>
-      <div className='w-full h-auto'>
+      {/* The projectList is no longer used, instead the projectCarousel is used for a better viewer experience */}
+      {/* <div className='w-full h-auto'>
         <ProjectList />
-      </div>
+      </div> */}
       <PageFooter />
     </div>
   );
