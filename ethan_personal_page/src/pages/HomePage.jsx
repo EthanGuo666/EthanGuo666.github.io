@@ -4,6 +4,7 @@ import HomePageHeaderBar from "../components/HomePageHeaderBar";
 import SummaryBox from "../components/SummaryBox";
 import EducationTimeline from "./EducationTimeline";
 import ProjectList from "./ProjectList";
+import ProjectCarousel from "./ProjectCarousel";
 import PageFooter from "../components/PageFooter";
 
 function HomePage() {
@@ -18,6 +19,9 @@ function HomePage() {
       {/* todo: sticky effect of education timeline "https://tailwindcss.com/docs/position#statically-positioning-elements" */}
       <div className='w-full h-auto'>
         <EducationTimeline />
+      </div>
+      <div className='w-full h-auto'>
+        <ProjectCarousel />
       </div>
       <div className='w-full h-auto'>
         <ProjectList />
