@@ -210,7 +210,9 @@ function EducationTimeline() {
             </TimelineItem>
           </div>
         </Timeline>
+        <br /><br />
       </div>
+      <br />
     </div>
   );
 }
