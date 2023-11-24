@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "../../styles/Canvas.css";
 import ProjectPageHeader from "./ProjectPageHeader";
 import CMU from "../../assets/CMU.jpg";
@@ -8,6 +8,10 @@ import AvartusSettingsPage from "../../assets/AvartusSettingsPage.jpeg";
 import PageFooter from "../../components/PageFooter";
 
 function Avartus() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <div>
       <ProjectPageHeader />

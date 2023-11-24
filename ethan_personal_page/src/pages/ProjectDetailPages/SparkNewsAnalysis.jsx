@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "../../styles/Canvas.css";
 import ProjectPageHeader from "./ProjectPageHeader";
 import PageFooter from "../../components/PageFooter";
@@ -10,6 +10,10 @@ import SparkNewsAnalysisSkipGram from "../../assets/SparkNewsAnalysisSkipGram.pn
 import SparkNewsAnalysisWord2Vec from "../../assets/SparkNewsAnalysisWord2Vec.png";
 
 function SparkNewsAnalysis() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <div>
       <ProjectPageHeader />

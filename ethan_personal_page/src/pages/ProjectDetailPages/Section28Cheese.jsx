@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import PicturePlaceHolder from "../../assets/PicturePlaceHolder.png";
 import Section28CheeseBlurred from "../../assets/Section28CheeseBlurred.jpg";
 import Section28CheeseLogin from "../../assets/Section28CheeseLogin.jpg";
@@ -7,6 +7,10 @@ import "../../styles/Canvas.css";
 import ProjectPageHeader from "./ProjectPageHeader";
 
 function Section28Cheese() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <div>
       <ProjectPageHeader />

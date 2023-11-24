@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import QRcodeGeneratorArchitecture from "../../assets/QRcodeGeneratorArchitecture.jpg";
 import QRcodeGeneratorBlurred from "../../assets/QRcodeGeneratorBlurred.jpg";
 import QRcodeProcessFlow from "../../assets/QRcodeProcessFlow.jpg";
@@ -8,6 +8,10 @@ import "../../styles/Canvas.css";
 import ProjectPageHeader from "./ProjectPageHeader";
 
 function QRcodeGenerator() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <div>
       <ProjectPageHeader />
