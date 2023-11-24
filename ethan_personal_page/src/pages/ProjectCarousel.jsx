@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 
-import "../styles/Canvas.css";
+import "../styles/Canvas2.css";
+import { CardActionArea } from "@mui/material";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
 import CMU from "../assets/CMU-Clear.jpeg";
 import QRcode from "../assets/QRcode.jpeg";
 import AWS from "../assets/AWS.png";
@@ -21,8 +26,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 function ProjectCarousel() {
     return (
-        <div className='Canvas text-center' id='projects-top'>
-            <br />
+        <div className='Canvas2 text-center' id='projects-top'>
             <br />
             <br />
             <br />
@@ -31,10 +35,9 @@ function ProjectCarousel() {
                 Projects
             </span>
             <br />
-            <br />
 
             <Swiper
-                spaceBetween={30}
+                spaceBetween={0}
                 centeredSlides={true}
                 autoplay={{
                     delay: 3500,
@@ -48,23 +51,155 @@ function ProjectCarousel() {
                 modules={[Autoplay, Pagination, Navigation]}
                 className='mySwiper'
                 style={{
-                    "--swiper-pagination-color": "#F0F0F0",
-                    "--swiper-navigation-color": "#F0F0F0",
+                    "--swiper-pagination-color": "#FFFFFF",
+                    "--swiper-navigation-color": "#FFFFFF",
                 }}
             >
                 <SwiperSlide>
-                    <img src={CMU} />
+                    <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-14'>
+                        <Card
+                            className='hover:shadow-2xl'
+                            style={{
+                                borderRadius: "30px",
+                            }}
+                        >
+                            <CardActionArea href='#/projects/avartus'>
+                                <CardMedia
+                                    className='opacity-80 hover:opacity-100 transition duration-400'
+                                    style={{ height: 350 }}
+                                    component='img'
+                                    image={CMU}
+                                />
+                                <CardContent>
+                                    <Typography
+                                        gutterBottom
+                                        variant='h5'
+                                        component='div'
+                                    >
+                                        Avartus
+                                    </Typography>
+                                    <Typography
+                                        variant='body2'
+                                        color='text.secondary'
+                                    >
+                                        A teaching facility remote control
+                                        <br />
+                                        system of CMU IT Dept.
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                    </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
-                    <img src={AWS} />
+                    <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-14'>
+                        <Card
+                            className='hover:shadow-2xl'
+                            style={{ borderRadius: "30px" }}
+                        >
+                            <CardActionArea href='#/projects/qrcodegenerator'>
+                                <CardMedia
+                                    className='opacity-80 hover:opacity-100 transition duration-400'
+                                    style={{ height: 350 }}
+                                    component='img'
+                                    image={AWS}
+                                />
+                                <CardContent>
+                                    <Typography
+                                        gutterBottom
+                                        variant='h5'
+                                        component='div'
+                                    >
+                                        QRcode generator
+                                    </Typography>
+                                    <Typography
+                                        variant='body2'
+                                        color='text.secondary'
+                                    >
+                                        A high-performance AWS QR code <br />
+                                        generator backend
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                    </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
-                    <img src={SparkNewsAnalysis} />
+                    <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-14'>
+                        <Card
+                            className='hover:shadow-2xl'
+                            style={{ borderRadius: "30px" }}
+                        >
+                            <CardActionArea href='#/projects/sparknewsanalysis'>
+                                <CardMedia
+                                    className='opacity-80 hover:opacity-100 transition duration-400'
+                                    style={{ height: 350 }}
+                                    component='img'
+                                    image={SparkNewsAnalysis}
+                                />
+                                <CardContent>
+                                    <Typography
+                                        gutterBottom
+                                        variant='h5'
+                                        component='div'
+                                    >
+                                        Spark News Analysis
+                                    </Typography>
+                                    <Typography
+                                        variant='body2'
+                                        color='text.secondary'
+                                    >
+                                        Undergraduate thesis project:
+                                        <br />a data analysis pipeline with
+                                        Apache Spark
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                    </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
-                    <img src={Section28Cheese} />
+                    <div className='w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-14'>
+                        <Card
+                            className='hover:shadow-2xl'
+                            style={{ borderRadius: "30px" }}
+                        >
+                            <CardActionArea href='#/projects/section28cheese'>
+                                <CardMedia
+                                    className='opacity-80 hover:opacity-100 transition duration-400'
+                                    style={{ height: 350 }}
+                                    component='img'
+                                    image={Section28Cheese}
+                                />
+                                <CardContent>
+                                    <Typography
+                                        gutterBottom
+                                        variant='h5'
+                                        component='div'
+                                    >
+                                        Section 28 Cheese
+                                    </Typography>
+                                    <Typography
+                                        variant='body2'
+                                        color='text.secondary'
+                                    >
+                                        The digitalization solution for
+                                        <br />a prize-winning cheese
+                                        manufacturer.
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                    </div>
                 </SwiperSlide>
             </Swiper>
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     );
 }
