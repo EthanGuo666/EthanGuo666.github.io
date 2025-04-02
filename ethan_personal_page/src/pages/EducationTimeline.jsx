@@ -299,7 +299,7 @@ function EducationTimeline() {
                     <div ref={refs[24]}>
                         <TimelineItem>
                             <TimelineOppositeContent>
-                                2016 Sep
+                                2022 Aug
                             </TimelineOppositeContent>
                             <TimelineSeparator className='mx-2'>
                                 <div
